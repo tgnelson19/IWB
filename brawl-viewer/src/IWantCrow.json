@@ -5,14 +5,14 @@
   "icon": {
     "id": 28000474
   },
-  "trophies": 100108,
-  "highestTrophies": 100108,
+  "trophies": 100175,
+  "highestTrophies": 100183,
   "expLevel": 321,
-  "expPoints": 525511,
+  "expPoints": 525759,
   "isQualifiedFromChampionshipChallenge": false,
-  "3vs3Victories": 22700,
+  "3vs3Victories": 22711,
   "soloVictories": 3772,
-  "duoVictories": 3515,
+  "duoVictories": 3519,
   "bestRoboRumbleTime": 5,
   "bestTimeAsBigBrawler": 0,
   "club": {
@@ -55,7 +55,6 @@
           "name": "BAND-AID"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000255,
@@ -65,7 +64,8 @@
           "id": 23000288,
           "name": "CLAY PIGEONS"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000001,
@@ -97,7 +97,6 @@
           "name": "MAGNUM SPECIAL"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000273,
@@ -107,7 +106,8 @@
           "id": 23000319,
           "name": "SILVER BULLET"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000002,
@@ -134,7 +134,6 @@
           "name": "TOUGH GUY"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000272,
@@ -144,15 +143,16 @@
           "id": 23000310,
           "name": "STOMPER"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000003,
       "name": "BROCK",
       "power": 11,
       "rank": 51,
-      "trophies": 1034,
-      "highestTrophies": 1035,
+      "trophies": 1068,
+      "highestTrophies": 1076,
       "maxWinStreak": 13,
       "gears": [
         {
@@ -176,7 +176,6 @@
           "name": "ROCKET NO. 4"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000245,
@@ -186,7 +185,8 @@
           "id": 23000316,
           "name": "ROCKET FUEL"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000004,
@@ -218,7 +218,6 @@
           "name": "ROBO RETREAT"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000246,
@@ -228,7 +227,8 @@
           "id": 23000409,
           "name": "BOUNCY CASTLE"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000005,
@@ -260,7 +260,6 @@
           "name": "CURVEBALL"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000247,
@@ -270,7 +269,8 @@
           "id": 23000406,
           "name": "LIFE PLANT"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000006,
@@ -302,7 +302,6 @@
           "name": "EXTRA NOXIOUS"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000250,
@@ -312,7 +311,8 @@
           "id": 23000293,
           "name": "HERBAL TONIC"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000007,
@@ -344,7 +344,6 @@
           "name": "SHOCKY"
         }
       ],
-      "currentWinStreak": 14,
       "gadgets": [
         {
           "id": 23000251,
@@ -354,7 +353,8 @@
           "id": 23000295,
           "name": "RECOIL SPRING"
         }
-      ]
+      ],
+      "currentWinStreak": 14
     },
     {
       "id": 16000008,
@@ -386,7 +386,6 @@
           "name": "HYPER BEAR"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000249,
@@ -396,14 +395,15 @@
           "id": 23000314,
           "name": "FAUX FUR"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000009,
       "name": "DYNAMIKE",
       "power": 11,
       "rank": 51,
-      "trophies": 1028,
+      "trophies": 1021,
       "highestTrophies": 1037,
       "maxWinStreak": 17,
       "gears": [
@@ -428,7 +428,6 @@
           "name": "DEMOLITION"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000258,
@@ -438,7 +437,8 @@
           "id": 23000294,
           "name": "SATCHEL CHARGE"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000010,
@@ -470,7 +470,6 @@
           "name": "METEOR RUSH"
         }
       ],
-      "currentWinStreak": 27,
       "gadgets": [
         {
           "id": 23000264,
@@ -480,7 +479,8 @@
           "id": 23000292,
           "name": "ASTEROID BELT"
         }
-      ]
+      ],
+      "currentWinStreak": 27
     },
     {
       "id": 16000011,
@@ -512,7 +512,6 @@
           "name": "COILED SNAKE"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000265,
@@ -522,7 +521,8 @@
           "id": 23000290,
           "name": "CREATURE OF THE NIGHT"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000012,
@@ -554,7 +554,6 @@
           "name": "CARRION CROW"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000243,
@@ -564,7 +563,8 @@
           "id": 23000286,
           "name": "SLOWING TOXIN"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000013,
@@ -585,7 +585,6 @@
           "name": "SCREECHING SOLO"
         }
       ],
-      "currentWinStreak": 7,
       "gadgets": [
         {
           "id": 23000267,
@@ -595,7 +594,8 @@
           "id": 23000350,
           "name": "PROTECTIVE TUNES"
         }
-      ]
+      ],
+      "currentWinStreak": 7
     },
     {
       "id": 16000014,
@@ -627,7 +627,6 @@
           "name": "SNARE A BEAR"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000263,
@@ -637,7 +636,8 @@
           "id": 23000289,
           "name": "TRIPWIRE"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000015,
@@ -669,7 +669,6 @@
           "name": "SNAPPY SNIPING"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000268,
@@ -679,7 +678,8 @@
           "id": 23000291,
           "name": "HOMEMADE RECIPE"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000016,
@@ -700,7 +700,6 @@
           "name": "MAMA'S SQUEEZE"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000257,
@@ -710,7 +709,8 @@
           "id": 23000404,
           "name": "SCRAPSUCKER"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000017,
@@ -742,7 +742,6 @@
           "name": "HEALING SHADE"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000266,
@@ -752,7 +751,8 @@
           "id": 23000356,
           "name": "SUPPORT FROM BEYOND"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000018,
@@ -784,7 +784,6 @@
           "name": "ROLLING RELOAD"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000260,
@@ -794,7 +793,8 @@
           "id": 23000313,
           "name": "TAR BARREL"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000019,
@@ -815,7 +815,6 @@
           "name": "MASTER BLASTER"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000248,
@@ -825,15 +824,16 @@
           "id": 23000287,
           "name": "TRUSTY SPYGLASS"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000020,
       "name": "FRANK",
       "power": 11,
       "rank": 51,
-      "trophies": 1037,
-      "highestTrophies": 1039,
+      "trophies": 1045,
+      "highestTrophies": 1045,
       "maxWinStreak": 10,
       "gears": [
         {
@@ -857,7 +857,6 @@
           "name": "SPONGE"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000261,
@@ -867,7 +866,8 @@
           "id": 23000351,
           "name": "IRRESISTIBLE ATTRACTION"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000021,
@@ -899,7 +899,6 @@
           "name": "SPIRIT SLAP"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000252,
@@ -909,7 +908,8 @@
           "id": 23000352,
           "name": "VENGEFUL SPIRITS"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000022,
@@ -941,7 +941,6 @@
           "name": "AUTOMA-TICK RELOAD"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000253,
@@ -951,7 +950,8 @@
           "id": 23000355,
           "name": "LAST HURRAH"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000023,
@@ -983,7 +983,6 @@
           "name": "INVISIHEAL"
         }
       ],
-      "currentWinStreak": 6,
       "gadgets": [
         {
           "id": 23000276,
@@ -993,7 +992,8 @@
           "id": 23000408,
           "name": "LOLLIPOP DROP"
         }
-      ]
+      ],
+      "currentWinStreak": 6
     },
     {
       "id": 16000024,
@@ -1025,7 +1025,6 @@
           "name": "THORNY GLOVES"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000242,
@@ -1035,7 +1034,8 @@
           "id": 23000348,
           "name": "UNFRIENDLY BUSHES"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000025,
@@ -1067,7 +1067,6 @@
           "name": "PROTECTIVE PIROUETTE"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000262,
@@ -1077,7 +1076,8 @@
           "id": 23000317,
           "name": "FLYING HOOK"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000026,
@@ -1109,7 +1109,6 @@
           "name": "BATTING STANCE"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000275,
@@ -1119,7 +1118,8 @@
           "id": 23000458,
           "name": "EXTRA STICKY"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000027,
@@ -1151,7 +1151,6 @@
           "name": "PLUGGED IN"
         }
       ],
-      "currentWinStreak": 19,
       "gadgets": [
         {
           "id": 23000259,
@@ -1161,7 +1160,8 @@
           "id": 23000318,
           "name": "EXTRA CREDITS"
         }
-      ]
+      ],
+      "currentWinStreak": 19
     },
     {
       "id": 16000028,
@@ -1193,7 +1193,6 @@
           "name": "HEALING WINDS"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000270,
@@ -1203,7 +1202,8 @@
           "id": 23000405,
           "name": "SWEET DREAMS"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000029,
@@ -1235,7 +1235,6 @@
           "name": "HONEYCOMB"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000271,
@@ -1245,15 +1244,16 @@
           "id": 23000312,
           "name": "RATTLED HIVE"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000030,
       "name": "EMZ",
       "power": 11,
       "rank": 51,
-      "trophies": 1001,
-      "highestTrophies": 1007,
+      "trophies": 1025,
+      "highestTrophies": 1032,
       "maxWinStreak": 23,
       "gears": [
         {
@@ -1277,7 +1277,6 @@
           "name": "HYPE"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000274,
@@ -1287,7 +1286,8 @@
           "id": 23000459,
           "name": "ACID SPRAY"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000031,
@@ -1319,7 +1319,6 @@
           "name": "REVOLVING DOOR"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000269,
@@ -1329,7 +1328,8 @@
           "id": 23000349,
           "name": "PORTER REINFORCEMENTS"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000032,
@@ -1361,7 +1361,6 @@
           "name": "RUN N GUN"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000254,
@@ -1371,7 +1370,8 @@
           "id": 23000311,
           "name": "SNEAKY SNEAKERS"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000034,
@@ -1403,7 +1403,6 @@
           "name": "HARDY HARD HAT"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000256,
@@ -1413,7 +1412,8 @@
           "id": 23000486,
           "name": "REBUILD"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000035,
@@ -1445,7 +1445,6 @@
           "name": "FREEZING SNOW"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000277,
@@ -1455,7 +1454,8 @@
           "id": 23000407,
           "name": "TWISTER"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000036,
@@ -1487,7 +1487,6 @@
           "name": "TEMPERED STEEL"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000278,
@@ -1497,7 +1496,8 @@
           "id": 23000353,
           "name": "RETURN TO SENDER"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000037,
@@ -1529,7 +1529,6 @@
           "name": "PHOTOSYNTHESIS"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000244,
@@ -1539,7 +1538,8 @@
           "id": 23000315,
           "name": "TRANSPLANT"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000038,
@@ -1560,7 +1560,6 @@
           "name": "SERVE ICE COLD"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000285,
@@ -1570,7 +1569,8 @@
           "id": 23000485,
           "name": "POWER SHIELD"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000039,
@@ -1591,7 +1591,6 @@
           "name": "MASS TAX"
         }
       ],
-      "currentWinStreak": 7,
       "gadgets": [
         {
           "id": 23000302,
@@ -1601,7 +1600,8 @@
           "id": 23000457,
           "name": "GOTCHA!"
         }
-      ]
+      ],
+      "currentWinStreak": 7
     },
     {
       "id": 16000040,
@@ -1633,7 +1633,6 @@
           "name": "SCORCHIN' SIPHON"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000309,
@@ -1643,7 +1642,8 @@
           "id": 23000488,
           "name": "DANCING FLAMES"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000041,
@@ -1675,7 +1675,6 @@
           "name": "HYPOTHERMIA"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000326,
@@ -1685,7 +1684,8 @@
           "id": 23000400,
           "name": "CRYO SYRUP"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000042,
@@ -1717,7 +1717,6 @@
           "name": "INJECTION"
         }
       ],
-      "currentWinStreak": 7,
       "gadgets": [
         {
           "id": 23000333,
@@ -1727,7 +1726,8 @@
           "id": 23000461,
           "name": "BOOSTER SHOTS"
         }
-      ]
+      ],
+      "currentWinStreak": 7
     },
     {
       "id": 16000043,
@@ -1759,7 +1759,6 @@
           "name": "FISTICUFFS"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000340,
@@ -1769,7 +1768,8 @@
           "id": 23000403,
           "name": "HARDCORE"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000044,
@@ -1801,7 +1801,6 @@
           "name": "FIELD PROMOTION"
         }
       ],
-      "currentWinStreak": 18,
       "gadgets": [
         {
           "id": 23000347,
@@ -1811,7 +1810,8 @@
           "id": 23000402,
           "name": "AIR SUPPORT"
         }
-      ]
+      ],
+      "currentWinStreak": 18
     },
     {
       "id": 16000045,
@@ -1832,7 +1832,6 @@
           "name": "GASO-HEAL"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000364,
@@ -1842,7 +1841,8 @@
           "id": 23000401,
           "name": "BREAKTHROUGH"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000046,
@@ -1874,7 +1874,6 @@
           "name": "GROUNDED"
         }
       ],
-      "currentWinStreak": 11,
       "gadgets": [
         {
           "id": 23000371,
@@ -1884,7 +1883,8 @@
           "id": 23000463,
           "name": "REVERSE POLARITY"
         }
-      ]
+      ],
+      "currentWinStreak": 11
     },
     {
       "id": 16000047,
@@ -1916,7 +1916,6 @@
           "name": "SUPER STICKY"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000378,
@@ -1926,7 +1925,8 @@
           "id": 23000462,
           "name": "RESIDUE"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000048,
@@ -1958,7 +1958,6 @@
           "name": "X-FACTOR"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000385,
@@ -1968,7 +1967,8 @@
           "id": 23000460,
           "name": "RADIO CHECK"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000049,
@@ -2000,7 +2000,6 @@
           "name": "EYES SHARP"
         }
       ],
-      "currentWinStreak": 11,
       "gadgets": [
         {
           "id": 23000392,
@@ -2010,7 +2009,8 @@
           "id": 23000490,
           "name": "X-RAY-SHADES"
         }
-      ]
+      ],
+      "currentWinStreak": 11
     },
     {
       "id": 16000050,
@@ -2042,7 +2042,6 @@
           "name": "BUSINESS RESILIENCE"
         }
       ],
-      "currentWinStreak": 14,
       "gadgets": [
         {
           "id": 23000399,
@@ -2052,7 +2051,8 @@
           "id": 23000487,
           "name": "COIN SHOWER"
         }
-      ]
+      ],
+      "currentWinStreak": 14
     },
     {
       "id": 16000051,
@@ -2089,7 +2089,6 @@
           "name": "MAD AS HECK"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000416,
@@ -2099,7 +2098,8 @@
           "id": 23000465,
           "name": "ROTTEN BANANA"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000052,
@@ -2131,7 +2131,6 @@
           "name": "HEAVY METAL"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000423,
@@ -2141,7 +2140,8 @@
           "id": 23000489,
           "name": "TOOLBOX"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000053,
@@ -2173,7 +2173,6 @@
           "name": "SEALED WITH A KISS"
         }
       ],
-      "currentWinStreak": 7,
       "gadgets": [
         {
           "id": 23000433,
@@ -2183,7 +2182,8 @@
           "id": 23000456,
           "name": "STUNT DOUBLE"
         }
-      ]
+      ],
+      "currentWinStreak": 7
     },
     {
       "id": 16000054,
@@ -2215,7 +2215,6 @@
           "name": "DIVINE SOLES"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000440,
@@ -2225,7 +2224,8 @@
           "id": 23000464,
           "name": "ROUNDHOUSE KICK"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000056,
@@ -2257,7 +2257,6 @@
           "name": "HAPPY SURPRISE"
         }
       ],
-      "currentWinStreak": 15,
       "gadgets": [
         {
           "id": 23000454,
@@ -2267,7 +2266,8 @@
           "id": 23000455,
           "name": "MOTHERLY LOVE"
         }
-      ]
+      ],
+      "currentWinStreak": 15
     },
     {
       "id": 16000057,
@@ -2288,7 +2288,6 @@
           "name": "VOCAL WARM UP"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000472,
@@ -2298,7 +2297,8 @@
           "id": 23000473,
           "name": "BACKSTAGE PASS"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000058,
@@ -2319,7 +2319,6 @@
           "name": "WISDOM TOOTH"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000480,
@@ -2329,7 +2328,8 @@
           "id": 23000481,
           "name": "CRASH TEST"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000059,
@@ -2361,7 +2361,6 @@
           "name": "INK REFILLS"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000497,
@@ -2371,7 +2370,8 @@
           "id": 23000498,
           "name": "PHAT SPLATTER"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000060,
@@ -2403,7 +2403,6 @@
           "name": "REMOTE RECHARGE"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000505,
@@ -2413,7 +2412,8 @@
           "id": 23000506,
           "name": "PULSE REPELLENT"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000061,
@@ -2445,7 +2445,6 @@
           "name": "SPIRIT ANIMAL"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000513,
@@ -2455,7 +2454,8 @@
           "id": 23000514,
           "name": "SOUL SWITCHER"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000062,
@@ -2476,7 +2476,6 @@
           "name": "KEVLAR VEST"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000521,
@@ -2486,7 +2485,8 @@
           "id": 23000522,
           "name": "SLO-MO REPLAY"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000063,
@@ -2507,7 +2507,6 @@
           "name": "SNEAK PEEK"
         }
       ],
-      "currentWinStreak": 8,
       "gadgets": [
         {
           "id": 23000529,
@@ -2517,7 +2516,8 @@
           "id": 23000530,
           "name": "CANDY BEANS"
         }
-      ]
+      ],
+      "currentWinStreak": 8
     },
     {
       "id": 16000064,
@@ -2549,7 +2549,6 @@
           "name": "NEW PERSPECTIVE"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000537,
@@ -2559,7 +2558,8 @@
           "id": 23000538,
           "name": "GRAND PIANO"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000065,
@@ -2591,7 +2591,6 @@
           "name": "HARD CANDY"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000545,
@@ -2601,7 +2600,8 @@
           "id": 23000546,
           "name": "COOKIE CRUMBS"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000066,
@@ -2633,7 +2633,6 @@
           "name": "RECORDING"
         }
       ],
-      "currentWinStreak": 9,
       "gadgets": [
         {
           "id": 23000555,
@@ -2643,7 +2642,8 @@
           "id": 23000556,
           "name": "HACKS!"
         }
-      ]
+      ],
+      "currentWinStreak": 9
     },
     {
       "id": 16000067,
@@ -2675,7 +2675,6 @@
           "name": "OBSESSION"
         }
       ],
-      "currentWinStreak": 18,
       "gadgets": [
         {
           "id": 23000563,
@@ -2685,7 +2684,8 @@
           "id": 23000564,
           "name": "DIVE"
         }
-      ]
+      ],
+      "currentWinStreak": 18
     },
     {
       "id": 16000068,
@@ -2717,7 +2717,6 @@
           "name": "TREMORS"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000571,
@@ -2727,7 +2726,8 @@
           "id": 23000572,
           "name": "FINISH THEM!"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000069,
@@ -2759,7 +2759,6 @@
           "name": "TAKE COVER!"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000579,
@@ -2769,7 +2768,8 @@
           "id": 23000580,
           "name": "BARRICADE"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000070,
@@ -2801,7 +2801,6 @@
           "name": "MUSHROOM KINGDOM"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000587,
@@ -2811,7 +2810,8 @@
           "id": 23000588,
           "name": "POISON MUSHROOM"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000071,
@@ -2843,7 +2843,6 @@
           "name": "SELF SERVICE"
         }
       ],
-      "currentWinStreak": 9,
       "gadgets": [
         {
           "id": 23000595,
@@ -2853,7 +2852,8 @@
           "id": 23000596,
           "name": "EXTRA MUSTARD"
         }
-      ]
+      ],
+      "currentWinStreak": 9
     },
     {
       "id": 16000072,
@@ -2885,7 +2885,6 @@
           "name": "HEAT SHIELD"
         }
       ],
-      "currentWinStreak": 18,
       "gadgets": [
         {
           "id": 23000603,
@@ -2895,7 +2894,8 @@
           "id": 23000604,
           "name": "MADE WITH LOVE"
         }
-      ]
+      ],
+      "currentWinStreak": 18
     },
     {
       "id": 16000073,
@@ -2927,7 +2927,6 @@
           "name": "TICKETS PLEASE!"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000611,
@@ -2937,7 +2936,8 @@
           "id": 23000612,
           "name": "GHOST TRAIN"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000074,
@@ -2969,7 +2969,6 @@
           "name": "SLIMY"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000625,
@@ -2979,7 +2978,8 @@
           "id": 23000626,
           "name": "PERSONAL SPACE"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000075,
@@ -3011,7 +3011,6 @@
           "name": "RECORD SMASH"
         }
       ],
-      "currentWinStreak": 26,
       "gadgets": [
         {
           "id": 23000639,
@@ -3021,7 +3020,8 @@
           "id": 23000640,
           "name": "PRESTO"
         }
-      ]
+      ],
+      "currentWinStreak": 26
     },
     {
       "id": 16000076,
@@ -3048,7 +3048,6 @@
           "name": "OVERLY ATTACHED"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000648,
@@ -3058,7 +3057,8 @@
           "id": 23000649,
           "name": "CHEESEBURGER"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000077,
@@ -3090,7 +3090,6 @@
           "name": "PROTOCOL: ASSIST"
         }
       ],
-      "currentWinStreak": 17,
       "gadgets": [
         {
           "id": 23000661,
@@ -3100,7 +3099,8 @@
           "id": 23000662,
           "name": "ORDER: FALL BACK"
         }
-      ]
+      ],
+      "currentWinStreak": 17
     },
     {
       "id": 16000078,
@@ -3126,9 +3126,12 @@
         {
           "id": 23000667,
           "name": "FAST BEATS"
+        },
+        {
+          "id": 23000668,
+          "name": "EXTENDED MIX"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000669,
@@ -3138,7 +3141,8 @@
           "id": 23000670,
           "name": "INTERLUDE"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000079,
@@ -3175,7 +3179,6 @@
           "name": "FLOW"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000677,
@@ -3185,7 +3188,8 @@
           "id": 23000678,
           "name": "MASTER FLETCHER"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000080,
@@ -3206,7 +3210,6 @@
           "name": "SHREDDING"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000736,
@@ -3216,7 +3219,8 @@
           "id": 23000737,
           "name": "LAST STAND"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000081,
@@ -3237,13 +3241,13 @@
           "name": "VIGILANCE"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000754,
           "name": "VANISH"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000082,
@@ -3275,7 +3279,6 @@
           "name": "MAKING A MESS"
         }
       ],
-      "currentWinStreak": 13,
       "gadgets": [
         {
           "id": 23000766,
@@ -3285,7 +3288,8 @@
           "id": 23000767,
           "name": "HEALTHY ADDITIVES"
         }
-      ]
+      ],
+      "currentWinStreak": 13
     },
     {
       "id": 16000083,
@@ -3306,7 +3310,6 @@
           "name": "PUMPING UP"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000774,
@@ -3316,7 +3319,8 @@
           "id": 23000775,
           "name": "TACTICAL RETREAT"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000084,
@@ -3337,7 +3341,6 @@
           "name": "SPEEDING TICKET"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000806,
@@ -3347,7 +3350,8 @@
           "id": 23000807,
           "name": "RAT RACE"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000085,
@@ -3379,7 +3383,6 @@
           "name": "NIGIRI NEMESIS"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23000817,
@@ -3389,7 +3392,8 @@
           "id": 23000818,
           "name": "HOSOMAKI HEALING"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000086,
@@ -3421,7 +3425,6 @@
           "name": "HARDENED HOODIE"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23000834,
@@ -3431,7 +3434,8 @@
           "id": 23000835,
           "name": "JUMP SCARE"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000087,
@@ -3452,7 +3456,6 @@
           "name": "NUMBING NEEDLES"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000850,
@@ -3462,7 +3465,8 @@
           "id": 23000851,
           "name": "ELEMENTALIST"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000089,
@@ -3483,7 +3487,6 @@
           "name": "RULE BENDING"
         }
       ],
-      "currentWinStreak": 1,
       "gadgets": [
         {
           "id": 23000877,
@@ -3493,7 +3496,8 @@
           "id": 23000878,
           "name": "RAGEQUIT"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000090,
@@ -3510,7 +3514,6 @@
           "name": "RENEGADE"
         }
       ],
-      "currentWinStreak": 6,
       "gadgets": [
         {
           "id": 23000885,
@@ -3520,7 +3523,8 @@
           "id": 23000886,
           "name": "ALL EYEZ ON ME"
         }
-      ]
+      ],
+      "currentWinStreak": 6
     },
     {
       "id": 16000091,
@@ -3557,7 +3561,6 @@
           "name": "HALF-TIME"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23000907,
@@ -3567,7 +3570,8 @@
           "id": 23000908,
           "name": "GRIM AND FROSTBITTEN"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000092,
@@ -3599,7 +3603,6 @@
           "name": "PRIMER"
         }
       ],
-      "currentWinStreak": 15,
       "gadgets": [
         {
           "id": 23000917,
@@ -3609,7 +3612,8 @@
           "id": 23000918,
           "name": "NO ESCAPE"
         }
-      ]
+      ],
+      "currentWinStreak": 15
     },
     {
       "id": 16000093,
@@ -3641,7 +3645,6 @@
           "name": "EXTRA HIGH NOTE"
         }
       ],
-      "currentWinStreak": 14,
       "gadgets": [
         {
           "id": 23000931,
@@ -3651,7 +3654,8 @@
           "id": 23000932,
           "name": "TIME FOR A SLOW SONG"
         }
-      ]
+      ],
+      "currentWinStreak": 14
     },
     {
       "id": 16000094,
@@ -3683,7 +3687,6 @@
           "name": "GRATUITY INCLUDED"
         }
       ],
-      "currentWinStreak": 3,
       "gadgets": [
         {
           "id": 23000940,
@@ -3693,7 +3696,8 @@
           "id": 23000941,
           "name": "HENSOJUTSU"
         }
-      ]
+      ],
+      "currentWinStreak": 3
     },
     {
       "id": 16000095,
@@ -3714,7 +3718,6 @@
           "name": "YOU BETTER RUN, YOU BETTER TAKE COVER"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23000991,
@@ -3724,7 +3727,8 @@
           "id": 23000992,
           "name": "COLD-BLOODED"
         }
-      ]
+      ],
+      "currentWinStreak": 0
     },
     {
       "id": 16000096,
@@ -3741,7 +3745,6 @@
           "name": "NEW INSECT OVERLORDS"
         }
       ],
-      "currentWinStreak": 2,
       "gadgets": [
         {
           "id": 23001000,
@@ -3751,7 +3754,8 @@
           "id": 23001001,
           "name": "WORKER ANTS"
         }
-      ]
+      ],
+      "currentWinStreak": 2
     },
     {
       "id": 16000097,
@@ -3779,7 +3783,6 @@
           "name": "ZUM ZUM ZUM"
         }
       ],
-      "currentWinStreak": 5,
       "gadgets": [
         {
           "id": 23001041,
@@ -3789,7 +3792,8 @@
           "id": 23001042,
           "name": "CAPO-WHAT?"
         }
-      ]
+      ],
+      "currentWinStreak": 5
     },
     {
       "id": 16000098,
@@ -3821,20 +3825,20 @@
           "name": "THE GREAT ZIGGINI"
         }
       ],
-      "currentWinStreak": 8,
       "gadgets": [
         {
           "id": 23001049,
           "name": "ELECTRIC SHUFFLE"
         }
-      ]
+      ],
+      "currentWinStreak": 8
     },
     {
       "id": 16000099,
       "name": "PIERCE",
       "power": 11,
       "rank": 51,
-      "trophies": 1000,
+      "trophies": 1008,
       "highestTrophies": 1009,
       "maxWinStreak": 18,
       "gears": [
@@ -3859,7 +3863,6 @@
           "name": "SLIP 'N SNIPE"
         }
       ],
-      "currentWinStreak": 0,
       "gadgets": [
         {
           "id": 23001062,
@@ -3869,7 +3872,8 @@
           "id": 23001063,
           "name": "YOU ONLY BRAWL TWICE"
         }
-      ]
+      ],
+      "currentWinStreak": 1
     },
     {
       "id": 16000100,
@@ -3901,7 +3905,6 @@
           "name": "A HELPING HAND"
         }
       ],
-      "currentWinStreak": 4,
       "gadgets": [
         {
           "id": 23001070,
@@ -3911,7 +3914,8 @@
           "id": 23001071,
           "name": "DISAPPEARING ACT"
         }
-      ]
+      ],
+      "currentWinStreak": 4
     },
     {
       "id": 16000101,
@@ -3943,7 +3947,6 @@
           "name": "PARASITISM"
         }
       ],
-      "currentWinStreak": 9,
       "gadgets": [
         {
           "id": 23001183,
@@ -3953,7 +3956,8 @@
           "id": 23001184,
           "name": "MORE LUMENS!"
         }
-      ]
+      ],
+      "currentWinStreak": 9
     }
   ]
 }
