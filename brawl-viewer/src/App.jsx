@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import player from './IWantCrow.json';
+import defaultPlayer from './IWantCrow.json';
 import './index.css';
 
 import {
@@ -19,7 +19,7 @@ import {
   MenuItem,
   FormControl,
 } from '@mui/material';
-import { Trophy, Zap, Star, Flame, TrendingUp, Shield, Cpu, LayoutGrid, X } from 'lucide-react';
+import { Trophy, Zap, Star, Flame, TrendingUp, Shield, Cpu, LayoutGrid, X, Upload, CheckCircle, AlertCircle } from 'lucide-react';
 
 const theme = createTheme({
   palette: {
@@ -99,7 +99,7 @@ const StatPill = ({ emoji, label, value, color, glowColor }) => (
   </Tooltip>
 );
 
-const PlayerProfilePanel = () => {
+const PlayerProfilePanel = ({ player }) => {
   const nameColor = `#${player.nameColor?.replace('0xff', '') || 'ff9727'}`;
   const totalWins = player['3vs3Victories'] + player.soloVictories + player.duoVictories;
 
@@ -204,6 +204,233 @@ const PlayerProfilePanel = () => {
 };
 
 /* ─────────────────────────────────────────────
+   Brawler overview block — 15 per row, compact
+───────────────────────────────────────────── */
+const TinyBrawlerCard = ({ brawler, onClick }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const imageUrl = `https://cdn.brawlify.com/brawlers/borderless/${brawler.id}.png`;
+  const powerColor = '#b06aff';
+
+  return (
+    <Tooltip title={brawler.name} placement="top" arrow>
+      <Box
+        onClick={() => onClick(brawler)}
+        sx={{
+          position: 'relative',
+          borderRadius: '8px',
+          overflow: 'hidden',
+          backgroundColor: '#0a1828',
+          border: '1px solid rgba(255,255,255,0.06)',
+          cursor: 'pointer',
+          transition: 'all 0.18s ease',
+          aspectRatio: '1 / 1',
+          display: 'flex',
+          flexDirection: 'column',
+          '&:hover': {
+            border: '1px solid rgba(231,111,81,0.6)',
+            boxShadow: '0 0 14px rgba(231,111,81,0.25)',
+            transform: 'translateY(-2px) scale(1.06)',
+            zIndex: 2,
+          },
+        }}
+      >
+        {/* Brawler image */}
+        <Box sx={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
+          {!imageLoaded && (
+            <Skeleton variant="rectangular" sx={{
+              position: 'absolute', inset: 0,
+              backgroundColor: 'rgba(255,255,255,0.04)',
+            }} />
+          )}
+          <CardMedia
+            component="img"
+            image={imageUrl}
+            alt={brawler.name}
+            onLoad={() => setImageLoaded(true)}
+            sx={{
+              position: 'absolute',
+              top: 0, left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              objectPosition: 'center center',
+              display: 'block',
+            }}
+          />
+          {/* Rank badge — top-left corner */}
+          <Box sx={{
+            position: 'absolute', top: 3, left: 3,
+            backgroundColor: 'rgba(10,18,35,0.88)',
+            border: '1px solid rgba(192,192,192,0.55)',
+            borderRadius: '4px',
+            px: '4px', py: '1px',
+            fontSize: '0.62rem',
+            fontWeight: 800,
+            color: '#c0c0c0',
+            lineHeight: 1.4,
+            letterSpacing: '0.3px',
+            backdropFilter: 'blur(4px)',
+          }}>
+            {brawler.rank}
+          </Box>
+
+          {/* Power level badge — top-right corner */}
+          <Box sx={{
+            position: 'absolute', top: 3, right: 3,
+            backgroundColor: 'rgba(10,18,35,0.88)',
+            border: `1px solid ${powerColor}99`,
+            borderRadius: '4px',
+            px: '4px', py: '1px',
+            fontSize: '0.62rem',
+            fontWeight: 800,
+            color: powerColor,
+            lineHeight: 1.4,
+            letterSpacing: '0.3px',
+            backdropFilter: 'blur(4px)',
+          }}>
+            {brawler.power}
+          </Box>
+        </Box>
+
+        {/* Trophy strip — bottom */}
+        <Box sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '3px',
+          py: '3px',
+          px: '4px',
+          background: 'linear-gradient(180deg, rgba(10,24,40,0.7) 0%, rgba(10,24,40,0.96) 100%)',
+          borderTop: '1px solid rgba(244,162,97,0.15)',
+          flexShrink: 0,
+        }}>
+          <Trophy size={10} color="#f4a261" fill="#f4a261" />
+          <Typography sx={{
+            color: '#f4a261',
+            fontSize: '0.62rem',
+            fontWeight: 800,
+            lineHeight: 1,
+            letterSpacing: '0.2px',
+            whiteSpace: 'nowrap',
+          }}>
+            {brawler.trophies.toLocaleString()}
+          </Typography>
+        </Box>
+      </Box>
+    </Tooltip>
+  );
+};
+
+const BrawlerOverview = ({ brawlers, onBrawlerClick }) => {
+  const [sortBy, setSortBy] = useState('default');
+
+  const sortedBrawlers = sortBy === 'trophies'
+    ? [...brawlers].sort((a, b) => b.trophies - a.trophies)
+    : brawlers;
+
+  return (
+    <Box sx={{
+      mb: 3,
+      borderRadius: '14px',
+      overflow: 'hidden',
+      border: '1px solid rgba(255,255,255,0.07)',
+      background: 'linear-gradient(160deg, rgba(14,24,42,0.98) 0%, rgba(8,16,30,0.98) 100%)',
+      boxShadow: '0 4px 24px rgba(0,0,0,0.35)',
+    }}>
+      {/* Header bar */}
+      <Box sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        px: 2.5,
+        py: 1.2,
+        background: 'linear-gradient(90deg, rgba(244,162,97,0.08) 0%, transparent 100%)',
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
+      }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <Box sx={{
+            width: 3, height: 16, borderRadius: '2px',
+            background: 'linear-gradient(180deg, #f4a261, #e76f51)',
+          }} />
+          <Typography sx={{
+            color: '#e2e8f0',
+            fontSize: '0.78rem',
+            fontWeight: 700,
+            letterSpacing: '1.5px',
+            textTransform: 'uppercase',
+          }}>
+            All Brawlers
+          </Typography>
+          <Typography sx={{
+            color: 'rgba(168,218,220,0.35)',
+            fontSize: '0.68rem',
+            fontWeight: 600,
+            letterSpacing: '0.5px',
+            ml: 0.5,
+          }}>
+            {brawlers.length} total
+          </Typography>
+        </Box>
+
+        {/* Sort controls */}
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
+          {[
+            { key: 'default', label: 'Default' },
+            { key: 'trophies', label: '🏆 Trophies' },
+          ].map(({ key, label }) => (
+            <Box
+              key={key}
+              onClick={() => setSortBy(key)}
+              sx={{
+                px: 1.2, py: 0.35,
+                borderRadius: '6px',
+                fontSize: '0.65rem',
+                fontWeight: 700,
+                letterSpacing: '0.4px',
+                cursor: 'pointer',
+                transition: 'all 0.15s',
+                ...(sortBy === key ? {
+                  backgroundColor: 'rgba(244,162,97,0.18)',
+                  border: '1px solid rgba(244,162,97,0.5)',
+                  color: '#f4a261',
+                } : {
+                  backgroundColor: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  color: 'rgba(168,218,220,0.5)',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255,255,255,0.08)',
+                    borderColor: 'rgba(255,255,255,0.15)',
+                    color: 'rgba(168,218,220,0.8)',
+                  },
+                }),
+              }}
+            >
+              {label}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Grid */}
+      <Box sx={{
+        p: 1.5,
+        display: 'grid',
+        gridTemplateColumns: 'repeat(15, 1fr)',
+        gap: '6px',
+      }}>
+        {sortedBrawlers.map((brawler) => (
+          <TinyBrawlerCard
+            key={brawler.id}
+            brawler={brawler}
+            onClick={onBrawlerClick}
+          />
+        ))}
+      </Box>
+    </Box>
+  );
+};
+
+/* ─────────────────────────────────────────────
    Simplified mini card (grid view)
 ───────────────────────────────────────────── */
 const MiniCard = ({ brawler, onClick }) => {
@@ -242,7 +469,6 @@ const MiniCard = ({ brawler, onClick }) => {
         }}>
           {brawler.name}
         </Typography>
-        {/* Power badge */}
         <Avatar sx={{ width: 28, height: 28, backgroundColor: '#e76f51', fontSize: '0.78rem', fontWeight: 800, color: '#fff', flexShrink: 0, ml: 0.5 }}>
           {String(brawler.power).padStart(2, '0')}
         </Avatar>
@@ -292,7 +518,6 @@ const BrawlerModal = ({ brawler, onClose }) => {
   const rankColor = brawler.rank >= 35 ? '#ff6b6b' : brawler.rank >= 25 ? '#ffd700' : brawler.rank >= 15 ? '#c0c0c0' : '#cd7f32';
 
   return (
-    /* Backdrop */
     <Box
       onClick={onClose}
       sx={{
@@ -305,7 +530,6 @@ const BrawlerModal = ({ brawler, onClose }) => {
         '@keyframes fadeIn': { from: { opacity: 0 }, to: { opacity: 1 } },
       }}
     >
-      {/* Modal card — stop propagation so clicking inside doesn't close */}
       <Box
         onClick={(e) => e.stopPropagation()}
         sx={{
@@ -362,7 +586,7 @@ const BrawlerModal = ({ brawler, onClose }) => {
           </Box>
         </Box>
 
-        {/* Brawler image — larger */}
+        {/* Brawler image */}
         <Box sx={{
           position: 'relative', paddingBottom: '62%',
           backgroundColor: '#071020', overflow: 'hidden', flexShrink: 0,
@@ -433,10 +657,10 @@ const BrawlerModal = ({ brawler, onClose }) => {
 /* ─────────────────────────────────────────────
    AppBar that scales its content to always fit
 ───────────────────────────────────────────── */
-const TOOLBAR_NATURAL_WIDTH = 580; // px — natural width at full size
+const TOOLBAR_NATURAL_WIDTH = 580;
 const TOOLBAR_HEIGHT = 56;
 
-const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setColumns, selectSx }) => {
+const ScalingAppBar = ({ nameColor, player, searchInput, setSearchInput, columns, setColumns, selectSx }) => {
   const outerRef = useRef(null);
   const [scale, setScale] = useState(1);
 
@@ -461,7 +685,6 @@ const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setCol
       boxShadow: '0 4px 20px rgba(0,0,0,0.35)',
       flexShrink: 0,
     }}>
-      {/* Outer shell — full width, fixed height, clips overflow */}
       <Box
         ref={outerRef}
         sx={{
@@ -472,7 +695,6 @@ const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setCol
           alignItems: 'center',
         }}
       >
-        {/* Inner content — natural width, scaled down to fit */}
         <Box sx={{
           display: 'flex',
           alignItems: 'center',
@@ -483,7 +705,6 @@ const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setCol
           transformOrigin: 'left center',
           transform: `scale(${scale})`,
         }}>
-          {/* Player name + trophies */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, flexShrink: 0 }}>
             <Typography sx={{
               color: nameColor, fontWeight: 800, fontSize: '1rem',
@@ -506,10 +727,8 @@ const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setCol
             </Box>
           </Box>
 
-          {/* Spacer */}
           <Box sx={{ flex: 1 }} />
 
-          {/* Search */}
           <TextField
             placeholder="Search…"
             value={searchInput}
@@ -527,7 +746,6 @@ const ScalingAppBar = ({ nameColor, searchInput, setSearchInput, columns, setCol
             }}
           />
 
-          {/* Column selector — shows just the number in trigger, full label in dropdown */}
           <FormControl size="small" sx={{ width: 80, flexShrink: 0 }}>
             <Select
               value={columns}
@@ -575,7 +793,42 @@ const GalleryApp = () => {
   const [searchInput, setSearchInput] = useState('');
   const [columns, setColumns] = useState(3);
   const [selectedBrawler, setSelectedBrawler] = useState(null);
+  const [playerData, setPlayerData] = useState(defaultPlayer);
+  const [uploadStatus, setUploadStatus] = useState(null);
+  const [uploadError, setUploadError] = useState('');
+  const fileInputRef = useRef(null);
 
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    if (!file.name.endsWith('.json')) {
+      setUploadStatus('error');
+      setUploadError('Please upload a .json file.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (evt) => {
+      try {
+        const parsed = JSON.parse(evt.target.result);
+        if (!parsed.brawlers || !parsed.name) {
+          setUploadStatus('error');
+          setUploadError('Invalid format — missing name or brawlers.');
+          return;
+        }
+        setPlayerData(parsed);
+        setUploadStatus('success');
+        setUploadError('');
+        setTimeout(() => setUploadStatus(null), 3000);
+      } catch {
+        setUploadStatus('error');
+        setUploadError('Could not parse JSON file.');
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = '';
+  };
+
+  const player = playerData;
   const nameColor = `#${player.nameColor?.replace('0xff', '') || 'ff9727'}`;
 
   const filtered = player.brawlers.filter(b =>
@@ -600,10 +853,9 @@ const GalleryApp = () => {
         display: 'flex', flexDirection: 'column',
         overflow: 'hidden', position: 'fixed', top: 0, left: 0,
       }}>
-
-        {/* ── Compact AppBar — scales inner content to always fit ── */}
         <ScalingAppBar
           nameColor={nameColor}
+          player={player}
           searchInput={searchInput}
           setSearchInput={setSearchInput}
           columns={columns}
@@ -611,7 +863,6 @@ const GalleryApp = () => {
           selectSx={selectSx}
         />
 
-        {/* ── Scrollable content ── */}
         <Box sx={{
           flex: 1, overflowY: 'auto',
           display: 'flex', justifyContent: 'center',
@@ -621,7 +872,63 @@ const GalleryApp = () => {
           '&::-webkit-scrollbar-thumb': { background: '#e76f51', borderRadius: '4px', '&:hover': { background: '#f4a261' } },
         }}>
           <Box sx={{ width: '100%', maxWidth: '1400px' }}>
-            <PlayerProfilePanel />
+
+            {/* Upload button */}
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 2 }}>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                style={{ display: 'none' }}
+                onChange={handleFileUpload}
+              />
+              <Box
+                onClick={() => fileInputRef.current?.click()}
+                sx={{
+                  display: 'flex', alignItems: 'center', gap: 1,
+                  px: 2, py: 1, borderRadius: '10px', cursor: 'pointer',
+                  background: 'linear-gradient(135deg, rgba(231,111,81,0.15), rgba(244,162,97,0.08))',
+                  border: '1px solid rgba(231,111,81,0.35)',
+                  transition: 'all 0.2s',
+                  '&:hover': {
+                    background: 'linear-gradient(135deg, rgba(231,111,81,0.25), rgba(244,162,97,0.15))',
+                    borderColor: '#e76f51',
+                    boxShadow: '0 0 16px rgba(231,111,81,0.2)',
+                    transform: 'translateY(-1px)',
+                  },
+                  '&:active': { transform: 'translateY(0)' },
+                }}
+              >
+                <Upload size={15} color="#e76f51" />
+                <Typography sx={{ color: '#e76f51', fontSize: '0.82rem', fontWeight: 700, whiteSpace: 'nowrap' }}>
+                  Load Player JSON
+                </Typography>
+              </Box>
+
+              {uploadStatus === 'success' && (
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.6,
+                  px: 1.5, py: 0.6, borderRadius: '8px',
+                  backgroundColor: 'rgba(99,202,183,0.12)',
+                  border: '1px solid rgba(99,202,183,0.3)',
+                }}>
+                  <CheckCircle size={13} color="#63cab7" />
+                  <Typography sx={{ color: '#63cab7', fontSize: '0.75rem', fontWeight: 600 }}>Loaded!</Typography>
+                </Box>
+              )}
+              {uploadStatus === 'error' && (
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.6,
+                  px: 1.5, py: 0.6, borderRadius: '8px',
+                  backgroundColor: 'rgba(255,107,107,0.12)',
+                  border: '1px solid rgba(255,107,107,0.3)',
+                }}>
+                  <AlertCircle size={13} color="#ff6b6b" />
+                  <Typography sx={{ color: '#ff6b6b', fontSize: '0.75rem', fontWeight: 600 }}>{uploadError}</Typography>
+                </Box>
+              )}
+            </Box>
+
+            <PlayerProfilePanel player={player} />
+            <BrawlerOverview brawlers={player.brawlers} onBrawlerClick={setSelectedBrawler} />
 
             {filtered.length === 0 ? (
               <Box sx={{ width: '100%', textAlign: 'center', mt: 8 }}>
@@ -647,7 +954,6 @@ const GalleryApp = () => {
         </Box>
       </Box>
 
-      {/* ── Brawler detail modal ── */}
       <BrawlerModal brawler={selectedBrawler} onClose={() => setSelectedBrawler(null)} />
     </ThemeProvider>
   );
